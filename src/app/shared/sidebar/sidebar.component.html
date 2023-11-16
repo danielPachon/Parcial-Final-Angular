@@ -1,0 +1,8 @@
+<div class="sidebar-container">
+  <div class="nav-links">
+    <a routerLink="/home">Home</a>
+    <a routerLink="/dashboard" *ngIf="isAdmin || isClient">Dashboard</a>
+    <a routerLink="/products">Productos</a>
+    <a routerLink="/promotions" *ngIf="isAdmin || isClient">Promociones</a>
+  </div>
+</div>

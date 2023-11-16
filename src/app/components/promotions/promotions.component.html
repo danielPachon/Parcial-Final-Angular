@@ -1,0 +1,9 @@
+<h2>Promociones</h2>
+<div class="promotions-container">
+  <div *ngFor="let promotion of promotions" class="promotion-item">
+    <img [src]="promotion.image" alt="{{ promotion.name }}">
+    <h3>{{ promotion.name }}</h3>
+    <p>{{ promotion.description }}</p>
+    <p>Discounted Price: {{ promotion.price | currency }}</p>
+  </div>
+</div>

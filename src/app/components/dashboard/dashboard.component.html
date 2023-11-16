@@ -1,0 +1,13 @@
+<div class="dashboard-container">
+  <div *ngIf="isAdmin">
+    <h2>Bienvenido, {{ username }}!</h2>
+    <p>Este es el panel de administración.</p>
+    <button routerLink="/create-user">Crear Usuario</button>
+    <br>
+    <button routerLink="/create-products">Crear Producto</button>
+  </div>
+  <div *ngIf="!isAdmin">
+    <h2>Bienvenido, {{ username }}</h2>
+    <p>Este es el panel de cliente.</p>
+  </div>
+</div>

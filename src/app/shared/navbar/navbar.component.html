@@ -1,0 +1,7 @@
+<div class="navbar-container">
+  <div class="brand">Tienda Online</div>
+  <div class="nav-links">
+    <span *ngIf="username">Bienvenido, {{ username }}!</span>
+    <button (click)="logout()" *ngIf="username">Cerrar Sesión</button>
+  </div>
+</div>

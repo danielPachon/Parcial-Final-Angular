@@ -1,9 +1,0 @@
-<div class="promotions-container">
-  <div class="product" *ngFor="let product of specialProducts">
-    <img [src]="product.image" alt="{{ product.name }}">
-    <h4>{{ product.name }}</h4>
-    <p>Precio: <span class="regular-price">{{ product.price | currency }}</span></p>
-    <p>Precio Especial: <span class="special-price">{{ product.specialPrice | currency }}</span></p>
-    <p>{{ product.description }}</p>
-  </div>
-</div>

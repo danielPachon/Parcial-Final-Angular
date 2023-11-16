@@ -1,0 +1,21 @@
+.not-authorized-container {
+  padding: 20px;
+}
+
+.not-authorized-container h2 {
+  color: #d32f2f;
+}
+
+.not-authorized-container p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.not-authorized-container a {
+  color: #4285f4;
+  text-decoration: none;
+}
+
+.not-authorized-container a:hover {
+  text-decoration: underline;
+}
