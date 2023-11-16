@@ -1,0 +1,22 @@
+<div class="dashboard-container">
+  <div class="sidebar">
+    <h2>Bienvenido, {{ adminName }}!</h2>
+    <button (click)="toggleView('products')">Ver Productos</button>
+    <button (click)="toggleView('promotions')">Ver Promociones</button>
+    <button>Crear Usuario</button>
+    <button>Crear Producto</button>
+  </div>
+  <div class="content">
+    <div *ngIf="showProducts" class="products-container">
+      <h3>Listado de Productos</h3>
+    <div class="product" *ngFor="let product of products">
+      <h4>{{ product.name }}</h4>
+      <p>Precio: {{ product.price | currency }}</p>
+    </div>
+    </div>
+    <div *ngIf="showPromotions" class="special-products-container">
+      <h3>Promociones Especiales</h3>
+    <app-promotions [specialProducts]="specialProducts"></app-promotions>
+    </div>
+  </div>
+</div>
